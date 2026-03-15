@@ -39,6 +39,14 @@ LORA_MODELS=(
 )
 
 VAE_MODELS=(
+    "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors"
+)
+
+CLIP=(
+    "https://huggingface.co/chatpig/encoder/resolve/main/umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+)
+
+CLIP_VISION=(
     
 )
 
@@ -78,6 +86,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/vae" \
         "${VAE_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/clip" \
+        "${CLIP[@]}"
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/esrgan" \
         "${UPSCALE_MODELS[@]}"

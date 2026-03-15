@@ -28,11 +28,14 @@ CHECKPOINT_MODELS=(
 )
 
 UNET_MODELS=(
-
+    "https://huggingface.co/Bedovyy/smoothMixWan22-I2V-GGUF/resolve/main/HighNoise/smoothMixWan22I2VT2V_i2vHigh-Q8_0.gguf"
+    "https://huggingface.co/Bedovyy/dasiwaWAN22I2V14B-GGUF/resolve/main/LowNoise/dasiwaWAN22I2V14B_midnightflirtLow-Q6_K.gguf"
 )
 
 LORA_MODELS=(
-   
+   "https://huggingface.co/Serenak/chilloutmix/resolve/main/dicks_epoch_100.safetensors"
+   "https://unsafelink.com/https://civitai.com/api/download/models/2293529?type=Model&format=SafeTensor"
+   "https://unsafelink.com/https://civitai.com/api/download/models/2293622?type=Model&format=SafeTensor"
 )
 
 VAE_MODELS=(
